@@ -12,4 +12,4 @@ class VectorDemo {
 		System.out.println(v.capacity());
 		System.out.println(v);
 	}
-}
+};

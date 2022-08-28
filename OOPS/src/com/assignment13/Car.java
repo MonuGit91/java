@@ -2,6 +2,7 @@ package com.assignment13;
 
 public class Car extends Vehicle{
 	int doors;
+	int maxSpeed;
 	
 	void print() {
 		super.print();
