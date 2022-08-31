@@ -1,6 +1,10 @@
 package InterviewQ;
 
+import java.util.*;
+
 public class Q14_HeapSort {
+	public static Scanner scan = new Scanner(System.in);
+	
 	public static void swap(int arr[], int i, int j) {
 		if(i == j) {
 			return;
@@ -43,14 +47,25 @@ public class Q14_HeapSort {
 	
 	
 	public static void main(String[] args) {
-		int arr[] = new int[10];
-		for(int i = 0; i < 10; i++) {
-			arr[i] = 10-i;
+//		int arr[] = new int[10];
+//		for(int i = 0; i < 10; i++) {
+//			arr[i] = 10-i;
+//		}
+		int n = scan.nextInt();
+		int arr[] = new int[n];
+		
+		for(int i = 0; i < n; i++) {
+			arr[i] = scan.nextInt();
 		}
+		
 		heapSort(arr);
-		for(int i = 0; i < 10; i++) {
+		for(int i = 0; i < n; i++) {
 			System.out.print(arr[i] + " ");
 		}
 	}
 
 }
+/*
+10
+3 5 2 9 4 6 1 7 8 0
+*/

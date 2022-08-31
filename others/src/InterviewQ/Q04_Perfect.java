@@ -7,7 +7,7 @@ public class Q04_Perfect {
 		for(int i = 2; i*i <= n; i++) {//(i <= Math.sqrt(n))
 			if(n % i == 0) {
 				if(i*i != n) {
-					sum += (i+n/i);
+					sum += (i+(n/i));
 				}
 				else {
 					sum += i;

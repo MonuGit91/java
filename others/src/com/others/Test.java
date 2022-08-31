@@ -4,11 +4,11 @@ import java.util.*;
 class Test {
 	static Scanner scan = new Scanner(System.in);
 	static int max = Integer.MIN_VALUE;
-	public static int minimum(int n, int arr[]) {
+	public static long minimum(int n, int arr[]) {
 		int q = scan.nextInt();
 		
-		int i = 1;
-		for(i = 1; i < 1000000000; i++) {
+		long i = 1;
+		for(i = 1; i < Long.MAX_VALUE; i++) {
 			if(i * n < q) continue;
 			if(i > max) break;
 			
@@ -42,9 +42,11 @@ class Test {
     	
     	int q = scan.nextInt();
     	while(q-- > 0) {
-    		int ans = minimum(n, arr);
+    		long ans = minimum(n, arr);
     		System.out.println(ans);
     	}
+    	
+    	
 	}
     
 }

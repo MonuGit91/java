@@ -5,28 +5,59 @@ import java.util.*;
 public class Initialization {
     
 	public static void main(String [] arg) {
-		ArrayList<Integer> arrl = new ArrayList<Integer>();
-		Stack<Integer> stk = new Stack<Integer>();
-		Queue<Integer> q = new LinkedList<Integer>();
-		PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
-		HashSet<Integer> hsSt = new HashSet<Integer>();
-		Map<Integer, Integer> map = new HashMap<>();
+		List<Integer> arrl = new ArrayList<>();//ArrayList<Integer> arrl1 = new ArrayList<Integer>();
+		Stack<Integer> stk = new Stack<>();
+		Queue<Integer> q = new LinkedList<>();
+		Queue<Integer> pq = new PriorityQueue<>();//PriorityQueue<Integer> pq1 = new PriorityQueue<Integer>();
+		Set<Integer> hsSt = new HashSet<>();//HashSet<Integer> hsSt1 = new HashSet<Integer>();
+		Map<Integer, Integer> map = new HashMap<>();//HashMap<Integer, Integer> map1 = new HashMap<>();
 		
-		arrl.add(1);
-		Iterator<Integer> it = arrl.iterator();
-		while(it.hasNext()) {
-			System.out.println(it.next());
+		for(int i = 0; i < 10; i++) {
+			arrl.add(i);
+			stk.push(i);//stk.add(i);
+			q.add(i);
+			pq.add(i);
+			hsSt.add(i);
+			map.put(i, i+100);
 		}
 		
-		hsSt.add(123);
-		it = hsSt.iterator();
-		while(it.hasNext()) {
-			System.out.println(it.next());
-		}
 		
-		map.put(100, 200);
-		for(Integer i : map.keySet()) {
-			System.out.println(i + " " + map.get(i));
+		for(int i : arrl) {
+			System.out.print(i + " ");
 		}
+		println();
+		
+		for(int i : stk) {
+			System.out.print(i + " ");
+		}
+		println();
+		
+		for(int i : q) {
+			System.out.print(i + " ");
+		}
+		println();
+		
+		for(int i : pq) {
+			System.out.print(i + " ");
+		}
+		println();
+		
+		for(int i : hsSt) {
+			System.out.print(i + " ");
+		}
+		println();
+		
+		for(Map.Entry<Integer, Integer> entity : map.entrySet()) {
+			int key = entity.getKey();
+			int val = entity.getValue();
+			
+			System.out.print(key + " " + val + ", ");
+		}
+	}
+
+	private static void println() {
+		// TODO Auto-generated method stub
+		System.out.println();
+		
 	}
 }
