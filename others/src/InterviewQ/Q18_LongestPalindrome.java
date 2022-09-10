@@ -2,7 +2,7 @@ package InterviewQ;
 
 import java.util.*;
 
-public class Q17_LongestPalindrome {	
+public class Q18_LongestPalindrome {	
 	private static int checkPalindrom(int num) {
 		// TODO Auto-generated method stub
 		String str = "" + num;

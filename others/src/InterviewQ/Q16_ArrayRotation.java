@@ -2,7 +2,7 @@ package InterviewQ;
 
 import java.util.*;
 
-public class ArrayRotation {
+public class Q16_ArrayRotation {
 	public static Scanner scan = new Scanner(System.in);
 	
 	public static void reverse1(int arr[], int k) {

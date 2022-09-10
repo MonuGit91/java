@@ -1,7 +1,7 @@
 package InterviewQ;
 
 
-public class Q19_ArmstrongNo {
+public class Q20_ArmstrongNo {
 	public static int pow(int num, int p) {
 		if(p == 0) {
 			return 1;

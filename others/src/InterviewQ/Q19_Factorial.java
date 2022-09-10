@@ -1,6 +1,6 @@
 package InterviewQ;
 
-public class Q18_Factorial {
+public class Q19_Factorial {
 	public static int factorial(int n) {
 		if(n <= 1) {
 			return n;

@@ -1,7 +1,7 @@
 package InterviewQ;
 import java.util.*;
 
-public class Q16_NonRepeatingElement {
+public class Q17_NonRepeatingElement {
 	public static void nonRepeating(int arr[]) {
 		Map<Integer, Integer> map = new HashMap<>();
 		

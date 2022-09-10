@@ -17,7 +17,7 @@ public class Q02_fibonacci {
 		
 		int ith = 0;
 		for(int i = 2; i <= nth; i++) {
-			ith = zeroth + first;
+			ith = (zeroth + first) % (int)(Math.pow(10, 9) +7);
 			zeroth = first;
 			first = ith;
 		}
@@ -37,6 +37,7 @@ public class Q02_fibonacci {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.out.println((int)Math.pow(10, 9) +7);
 		System.out.print("Enter zeroth and first fibonacci no: ");
 		int zeroth = scan.nextInt();
 		int first = scan.nextInt();
@@ -47,9 +48,9 @@ public class Q02_fibonacci {
 		System.out.print(nth + " fibonacci no is: ");
 		System.out.println((fibonacci(zeroth, first, nth)));
 		
-		System.out.print(nth + " fibonacci no is: ");
-		System.out.println((fibonacci(nth)));
-		
+//		System.out.print(nth + " fibonacci no is: ");
+//		System.out.println((fibonacci(6)));
+//		
 	}
 
 }

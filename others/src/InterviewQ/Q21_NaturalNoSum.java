@@ -1,6 +1,6 @@
 package InterviewQ;
 
-public class Q20_NaturalNoSum {
+public class Q21_NaturalNoSum {
 	public static int naturaNoSum(int n) {
 		if(n == 0) {
 			return -1;
