@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="794273c7-ef5e-453a-8172-748e33cb2c74" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/InserstionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/tries/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment1/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment1/StudentUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment10/Bicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment10/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment10/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment10/VehicleUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment11/Bicycle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment11/Bicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment11/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment11/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment11/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment11/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment11/VehicleUse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment11/VehicleUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment12/Truck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment12/VehicleUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment13/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment13/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment13/VehicleUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment14/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment14/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment14/VehicleUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment15/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment15/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment15/VehicleUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment16/Bicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment16/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment16/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment16/VehicleUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment17/DevideByZeroException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment17/ExceptionDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment18/DivideByZeroException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment18/ExceptionHandelingDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment18/Fraction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment18/negativeNumberException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment19/Bicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment19/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment19/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment19/VehicleUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment2/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment2/StudentUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment21/VehicleUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment22/Bicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment22/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment22/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment22/VehicleUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment23/BMW.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment23/Bicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment23/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment23/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment23/VehicleUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment24/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment24/VehicleInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment24/VehicleUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment25/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment25/CarInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment25/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment25/VehicleInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment25/VehicleUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment3/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment3/StudentUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment4/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment4/StudentUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment5/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment5/StudentUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment6/Math.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment7/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment7/StudentUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment8/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment8/StudentUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment9/EncapsulatonStudent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment9/InheritancePerson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment9/InheritanceStudent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS/src/com/assignment9/InheritanceStudentUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/graph/biggestPeaceOfLand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/oops1/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/oops1/Fraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/oops1/FractionUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/oops1/FractionUse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/oops1/Polynomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/oops1/Polynomial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/oops1/PolynomialUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/oops1/PolynomialUse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/queue/EmptyQueueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/queue/EmptyQueueException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/queue/FullQueueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/queue/FullQueueException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/queue/QueueUsingArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/queue/QueueUsingArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/queue/TestQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/queue/TestQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/recursion1/ArrSortedOrNot.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/recursion1/ArrSortedOrNot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/recursion1/DigitCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/recursion1/DigitCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/recursion1/Factorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/recursion1/Factorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/recursion1/Fibonachii.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/recursion1/Fibonachii.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/recursion1/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/recursion1/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/recursion1/OneToN.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/recursion1/OneToN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/recursion1/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/recursion1/Power.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/recursion1/Summation.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/recursion1/Summation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/recursion2/CharacterReplace.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/recursion2/CharacterReplace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/recursion2/PrintAllSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/recursion2/PrintAllSubsequences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/recursion2/ReplacePi.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/recursion2/ReplacePi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/recursion2/Sortings.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/recursion2/Sortings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/recursion2/TawerOfHanoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/recursion2/TawerOfHanoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/stack/EmptyStackException.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/stack/EmptyStackException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/stack/StackFullException.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/stack/StackFullException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/stack/StackUsingArr.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/stack/StackUsingArr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/stack/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/stack/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/com/timeComlpexity/PairSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/timeComlpexity/PairSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/src/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q00_Prime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q01_ReverseNo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q02_fibonacci.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q03_GCD_or_HCF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q04_Perfect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q05_Anagram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q06_Palindrome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q07_CharactersFrequency.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q08_WildcardCharacters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q09_BubbleSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q10_MergeSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q11_LeapYear.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q12_NonReapetingCharacter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q13_ReplaceSubstring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q14_HeapSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q15_ReplaceByRank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q16_ArrayRotation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q17_NonRepeatingElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q18_LongestPalindrome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q19_Factorial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q20_ArmstrongNo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q21_NaturalNoSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q22_BinaryToDecimal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/InterviewQ/Q23_AutomorphicNo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/com/others/Buffered_Reader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/com/others/GrnralMethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/com/others/Initialization.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/com/others/Prime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/com/others/PrimeSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/com/others/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/com/others/Sorting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/com/others/StringAndInteger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/com/others/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/com/others/UserMainCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/src/module-info.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JVTwxyvliT3oXs2pkTUSAhix5M" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/narenderkumarchoudhary/Public/Education/java/dsa/recursion2&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dsa/recursion2" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/OOPS" />
+      <recent name="$PROJECT_DIR$/dsa" />
+      <recent name="$PROJECT_DIR$/others" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="java" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="794273c7-ef5e-453a-8172-748e33cb2c74" name="Changes" comment="" />
+      <created>1672162492713</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672162492713</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
