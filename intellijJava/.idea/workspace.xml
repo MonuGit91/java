@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9565f871-952c-41e3-b9a2-ffeb5f1c19bc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/java IntelliJ/testing/p1/P1class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java IntelliJ/testing/p2/P2class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/searchEngine/crawler/src/main/java/com/Ranker/Ranker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/searchEngine/crawler/src/main/java/com/applicationRunner/ApplicationRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/searchEngine/crawler/src/main/java/com/fileInput/FileInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/searchEngine/crawler/src/main/java/com/fileInput/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/searchEngine/crawler/src/main/java/com/fileInput/readWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/searchEngine/crawler/src/main/java/com/indexer/IndexerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/searchEngine/crawler/src/main/java/com/others/Pair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java IntelliJ/fileInput/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/java IntelliJ/fileInput/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java IntelliJ/out/production/Java IntelliJ/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java IntelliJ/out/production/Java IntelliJ/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java IntelliJ/out/production/Java IntelliJ/fileInput/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/java IntelliJ/out/production/Java IntelliJ/fileInput/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java IntelliJ/out/production/Java IntelliJ/testing/FileInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/java IntelliJ/out/production/Java IntelliJ/testing/FileInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java IntelliJ/out/production/Java IntelliJ/testing/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/java IntelliJ/out/production/Java IntelliJ/testing/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java IntelliJ/out/production/Java IntelliJ/testing/Trie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java IntelliJ/testing/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/java IntelliJ/testing/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/searchEngine/crawler/demoUpdated.html" beforeDir="false" afterPath="$PROJECT_DIR$/searchEngine/crawler/demoUpdated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/searchEngine/crawler/src/main/java/com/crawler/crawler/CrawlerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/searchEngine/crawler/src/main/java/com/crawler/crawler/CrawlerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/searchEngine/crawler/src/main/java/com/crawler/jsoup/ExploreJsoup.java" beforeDir="false" afterPath="$PROJECT_DIR$/searchEngine/crawler/src/main/java/com/crawler/jsoup/ExploreJsoup.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2MwbeVIyleAIpEbN0s4wGoRid45" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/narenderkumarchoudhary/Public/education/java/intellijJava"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9565f871-952c-41e3-b9a2-ffeb5f1c19bc" name="Changes" comment="" />
+      <created>1678681687366</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678681687366</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
