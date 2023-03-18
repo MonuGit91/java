@@ -1,6 +1,7 @@
 package testing;
 
 import java.io.*;
+import java.net.URL;
 import java.util.*;
 class TrieNode {
     char data;
@@ -70,10 +71,22 @@ class Solution extends FileInput {
     }
     //Main Method
     public static void main(String[] args) {
-        fileInput();
-        int n = scan.nextInt();
-        pattern1(n);
-        pattern2(n);
+//        fileInput();
+//        int n = scan.nextInt();
+//        pattern1(n);
+//        pattern2(n);
+        try {
+            String url = "https://en.wikipedia.org/wiki/BHIM";
+            URL parsedUrl = new URL(url);
+
+            System.out.println("Protocol: " + parsedUrl.getProtocol());
+            System.out.println("Host: " + parsedUrl.getHost());
+            System.out.println("Path: " + parsedUrl.getPath());
+            System.out.println("Query: " + parsedUrl.getQuery());
+            System.out.println("Fragment: " + parsedUrl.getRef());
+
+        }
+        catch (Exception e) {}
 
     }
 }

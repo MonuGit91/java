@@ -2,31 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36d28162-cfd5-47ab-b4c1-06529f18db7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/intellijJava.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java IntelliJ/testing/p1/P1class.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java IntelliJ/testing/p2/P2class.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/src/main/java/com/Ranker/Ranker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/src/main/java/com/applicationRunner/ApplicationRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/src/main/java/com/fileInput/FileInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/src/main/java/com/fileInput/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/src/main/java/com/fileInput/readWrite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/src/main/java/com/indexer/IndexerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/src/main/java/com/others/Pair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java IntelliJ/fileInput/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../java IntelliJ/fileInput/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/fileInput/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/fileInput/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/ApplicationRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/controllers/RequestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/CrawlerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/First_link.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/IndexerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/ObjectCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/Pair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/Ranker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/fileInput/FileInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/fileInput/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/fileInput/readWrite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../eclipsJava/searchEngine/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../eclipsJava/searchEngine/.project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/testing/FileInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/testing/FileInput.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/testing/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/testing/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/testing/Trie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/testing/TrieNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/testing/TrieNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java IntelliJ/testing/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java IntelliJ/testing/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/demoUpdated.html" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/demoUpdated.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/src/main/java/com/applicationRunner/ApplicationRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/src/main/java/com/applicationRunner/ApplicationRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crawler/src/main/java/com/crawler/crawler/CrawlerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/src/main/java/com/crawler/crawler/CrawlerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/src/main/java/com/crawler/jsoup/ExploreJsoup.java" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/src/main/java/com/crawler/jsoup/ExploreJsoup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +38,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/narenderkumarchoudhary/Public/education/java/intellijJava/searchEngine"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/narenderkumarchoudhary/Public/education/java/intellijJava/searchEngine&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

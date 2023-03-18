@@ -4,6 +4,7 @@ import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -20,7 +21,7 @@ public class CrawlerApplication{
 	int threadno;
 	static IndexerApplication indexerApplication = new IndexerApplication();
 	public CrawlerApplication(String link, int num, int no) {
-//		System.out.println("crawled");
+
 
 		first_link = link;
 		ID = num;
@@ -39,6 +40,7 @@ public class CrawlerApplication{
 	}
 
 	public void crawl(String url) throws Exception {
+
 		crawl(0, url);
 	}
 	public void crawl(int level, String url) {
@@ -81,9 +83,6 @@ public class CrawlerApplication{
 	}
 }
 
-//class MultithreadedCrawle {
-//
-//}
 
 
 //class Crawle {

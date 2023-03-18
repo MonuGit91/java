@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost/cinetimedb?createDatabaseIfNotExist=true
+    username: root
+    password: Monu@9134
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
