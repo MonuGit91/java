@@ -11,26 +11,27 @@ import java.util.Map;
 public class IndexerApplication {
 
     public static List <Pair> indexed = new ArrayList<>();
+    public static String words[];
     public void indexer(String url, Document document) {
         int count = 0;
         Map<String, Integer> map = new HashMap<>();
 
         for(Element paragraph : document.select("p")) {
-            String arr[] = paragraph.text().trim().split("[',','.','-','_',' ']");
+            String arr[] = paragraph.text().trim().split("[^a-zA-Z]+");
             for(String s : arr) {
                 s = s.toLowerCase();
                 if(map.containsKey(s)) { map.put(s, map.get(s)+1); }
                 else { map.put(s, 1); }
-
-                if(s.length() == 4 && s.toLowerCase().contains("java")) { count++; }
             }
         }
-        if(count > 0 && indexed.size() < 50) {
-            indexed.add(new Pair(url, map));
+
+        for(String word : words) {
+            if(map.containsKey(word)) {
+//                System.out.println(word);
+                indexed.add(new Pair(url, map));
+                break;
+            }
         }
-        if(indexed.size() >= 50) {
-            Ranker ranker = new Ranker();
-            ranker.ranking(indexed, "java");
-        }
+
     }
 }

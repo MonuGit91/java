@@ -7,13 +7,13 @@ import java.util.List;
 
 public class Ranker {
     public static List<String> urls = new ArrayList<>();
-    public static void ranking(List<Pair> list, String key) {
-        Collections.sort(list, new Descending(key));
+    public static void ranking(List<Pair> list, String keys[]) {
+        Collections.sort(list, new Descending(keys[0]));
 
         for(Pair pair : list) {
-            if(urls.size() <= 50) urls.add(pair.url);
+            if(urls.size() < 50 && !urls.contains(pair.url)) urls.add(pair.url);
             else break;
-            System.out.println(urls.size());
+            System.out.println(pair.url);
         }
     }
 }

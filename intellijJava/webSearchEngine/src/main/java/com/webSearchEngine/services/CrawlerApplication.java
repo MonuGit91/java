@@ -21,7 +21,7 @@ public class CrawlerApplication {
     private static final int MAX_DEPTH = 3;
     private Thread thread;
     public String first_link;
-    private static List<String> visited = new ArrayList<>();
+    public static List<String> visited = new ArrayList<>();
     int ID;
     int threadno;
     static IndexerApplication indexerApplication = new IndexerApplication();
@@ -52,15 +52,12 @@ public class CrawlerApplication {
         visited.add(url);
         Document document = request(url);
         if (document == null) { return; }
-
 		indexerApplication.indexer(url, document);
-//        System.out.println(threadno + " " + indexerApplication.indexed.size());
         for (Element link : document.select("a[href]")) {
-            if (indexerApplication.indexed.size() <= 50) {
+            if (indexerApplication.indexed.size() < 50) {
                 String next_link = link.absUrl("href");
                 crawl(level + 1, next_link);
             } else {
-                System.out.println(threadno + " " + indexerApplication.indexed.size());
                 break;
             }
         }
