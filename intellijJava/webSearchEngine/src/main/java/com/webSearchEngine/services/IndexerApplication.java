@@ -27,7 +27,6 @@ public class IndexerApplication {
 
         for(String word : words) {
             if(map.containsKey(word)) {
-//                System.out.println(word);
                 indexed.add(new Pair(url, map));
                 break;
             }

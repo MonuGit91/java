@@ -1,11 +1,5 @@
 package com.webSearchEngine.services;
 
-import lombok.Value;
-import org.springframework.beans.factory.config.ConfigurableBeanFactory;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -15,8 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.lang.String;
 
-//@Component
-//@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class CrawlerApplication {
     private static final int MAX_DEPTH = 3;
     private Thread thread;

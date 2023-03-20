@@ -76,7 +76,7 @@ class Solution extends FileInput {
 //        pattern1(n);
 //        pattern2(n);
         try {
-            String url = "https://en.wikipedia.org/wiki/BHIM";
+            String url = "https://www.example.com/path/to/resource?key=value#fragment";
             URL parsedUrl = new URL(url);
 
             System.out.println("Protocol: " + parsedUrl.getProtocol());

@@ -1,16 +1,16 @@
 package com.webSearchEngine;
 
-import com.webSearchEngine.services.CrawlerApplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import static com.webSearchEngine.services.fileInput.FileInput.fileInput;
-import static com.webSearchEngine.services.fileInput.FileInput.scan;
 
 @SpringBootApplication
+@Configuration
+@EnableJpaRepositories(basePackages = "com.webSearchEngine.*")
 public class ApplicationRunner{
     public static void main(String[] args){
         fileInput();

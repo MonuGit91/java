@@ -1,29 +1,37 @@
 package com.webSearchEngine.services;
 
+import com.webSearchEngine.dao.models.Url;
+import com.webSearchEngine.dao.repositories.UrlRepository;
+import com.webSearchEngine.services.fileInput.FileInput;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ObjectCreator extends com.webSearchEngine.services.fileInput.FileInput {
-    CrawlerApplication crawlerApplication;
+@Service
+public class ObjectCreator extends FileInput {
+    @Autowired
+    UrlRepository urlRepository;
 
-    public static void createrObject(String quarry) {
+    public void createrObject(String quarry) {
         fileInput();
+        List<Url> urls =  urlRepository.findAll();
+
         IndexerApplication.words = quarry.trim().split("[',','.','-','_',' ']");
-        for(int i = 0; i < IndexerApplication.words.length; i++) {
+        for (int i = 0; i < IndexerApplication.words.length; i++) {
             IndexerApplication.words[i] = IndexerApplication.words[i].toLowerCase();
         }
         List<CrawlerApplication> bots = new ArrayList<>();
-        for(int i = 0; i < 40; i++) {
-            bots.add(new CrawlerApplication(scan.nextLine(), 1, i));
+        for (int i = 0; i < 40; i++) {
+            bots.add(new CrawlerApplication(urls.get(i).getUrl(), 1, i));
         }
         System.out.println(bots.size());
-        for(CrawlerApplication bot : bots) {
+        for (CrawlerApplication bot : bots) {
             try {
                 bot.getThread().join();
-            } catch (Exception e) {}
+            } catch (Exception e) {
+            }
         }
 
     }

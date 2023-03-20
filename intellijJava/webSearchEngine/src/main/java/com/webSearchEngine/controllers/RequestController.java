@@ -1,6 +1,7 @@
 package com.webSearchEngine.controllers;
 
 import com.webSearchEngine.ApplicationRunner;
+import com.webSearchEngine.dao.repositories.UrlRepository;
 import com.webSearchEngine.services.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,16 +20,14 @@ import static com.webSearchEngine.services.IndexerApplication.words;
 @RestController
 @RequestMapping("/www.ayudika.com")
 public class RequestController {
-//    @Autowired
-//    ObjectCreator objectCreator;
-
+        @Autowired
+    ObjectCreator objectCreator;
     @GetMapping("/{value}")
     ResponseEntity<List<String>> getUrls(@PathVariable("value") String quarry) {
-//        System.out.println(name);
-        ObjectCreator objectCreator = new ObjectCreator();
         objectCreator.createrObject(quarry);
         System.out.println("RequestController");
         Ranker.ranking(indexed, words);
+
         ResponseEntity<List<String>> responseEntity = new ResponseEntity<>(Ranker.urls, HttpStatus.OK);
         Clear.cleanMemory();
         return responseEntity;
