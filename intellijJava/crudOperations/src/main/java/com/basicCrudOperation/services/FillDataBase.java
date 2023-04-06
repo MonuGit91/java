@@ -24,10 +24,10 @@ public class FillDataBase {
             try {
                 Url url = new Url();
                 url.setUrl(urlStr);
+                System.out.println(url.toString());
                 urlRepository.save(url);
             }
             catch (Exception e) {}
-
         }
 
     }

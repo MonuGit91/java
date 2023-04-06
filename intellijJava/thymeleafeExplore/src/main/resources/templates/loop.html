@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang = "en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Loop Example</title>
+</head>
+<body>
+<h1>Aji Gana Sunbaa.... loop wala</h1>
+<!-- -->
+<h2 th:text="${names}"/>
+<ul>
+<!--    <li th:each="n, status : ${names}">-->
+<!--        <span th:style="${status.odd} ? 'font-weight:bold' : 'color:red;font-weight:bold'"  th:text="${status.index} + ' ' + ${n}"/>-->
+<!--    </li>-->
+    <li th:each="n : ${names}">
+        <span th:text="${n}"></span>
+    </li>
+</ul>
+
+
+</body>
+</html>

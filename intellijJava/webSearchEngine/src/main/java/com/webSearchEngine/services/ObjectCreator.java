@@ -23,7 +23,7 @@ public class ObjectCreator extends FileInput {
             IndexerApplication.words[i] = IndexerApplication.words[i].toLowerCase();
         }
         List<CrawlerApplication> bots = new ArrayList<>();
-        for (int i = 0; i < 40; i++) {
+        for (int i = 0; i < urls.size() && i < 40; i++) {
             bots.add(new CrawlerApplication(urls.get(i).getUrl(), 1, i));
         }
         System.out.println(bots.size());

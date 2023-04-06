@@ -1,95 +1,68 @@
 package testing;
 
 import java.io.*;
-import java.net.URL;
 import java.util.*;
-class TrieNode {
-    char data;
-    int value;
-    boolean isTerminating;
-    TrieNode children[];
-    int childCount;
 
-    public TrieNode(char data) {
+class Node {
+    String data;
+    Node left, right;
+
+    public Node(String data) {
         this.data = data;
-        this.value = 0;
-        isTerminating = false;
-        children = new TrieNode[26];
+        this.left = null;
+        this.right = null;
     }
 }
 
-
-class Solution extends FileInput {
-    public static void pattern1(int n) {
-/*
-1     1
- 2   2
-  3 3
-   4
-  5 5
- 6   6
-7     7
-*/
-        for(int i = 1; i <= 2*n-1; i++) {
-            for(int j = 1;  j <= n*2-1; j++) {
-                if(i == j || j == (2*n-(i))) System.out.print(i);
-                else System.out.print(" ");
-            }
-            System.out.println();
-        }
-
-    }
-    public static void pattern2(int n) {
-        /*
-   *
-  ***
- *****
-  ***
-   *
-         */
-        for(int i = 0; i < n; i++) {
-            for(int j = 0; j <2*n-1; j++) {
-                if(j >= n-i-1 && j <= n+i-1)System.out.print("*");
-                else System.out.print(" ");
-            }
-            System.out.println();
-        }
-        for(int i = 1; i < n; i++) {
-            for(int j = 0; j < 2*n-1; j++) {
-                if(j >= i && j <= 2*n-i-2)System.out.print("*");
-                else System.out.print(" ");
-            }
-            System.out.println();
-        }
-    }
-
-    public static void pattern3(int n) {
-        /*
-
-
-         */
-    }
-    //Main Method
+public class Solution {
+    static Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {
-//        fileInput();
-//        int n = scan.nextInt();
-//        pattern1(n);
-//        pattern2(n);
-        try {
-            String url = "https://www.example.com/path/to/resource?key=value#fragment";
-            URL parsedUrl = new URL(url);
-
-            System.out.println("Protocol: " + parsedUrl.getProtocol());
-            System.out.println("Host: " + parsedUrl.getHost());
-            System.out.println("Path: " + parsedUrl.getPath());
-            System.out.println("Query: " + parsedUrl.getQuery());
-            System.out.println("Fragment: " + parsedUrl.getRef());
-
-        }
-        catch (Exception e) {}
+        String str[] = scan.nextLine().trim().split("[' ']");
+        int n = str.length;
+        System.out.println((n+1)/2);
 
     }
 }
+
+//public class Solution extends FileInput {
+//    public static Node insertData(String str) {
+//        if(str == null) return null;
+//
+//        String arr[] = str.trim().split("[' ']");
+//        Queue<Node> q = new LinkedList<>();
+//        Node root = new Node(arr[0]);
+//        q.add(root);
+//
+//        int i = 1;
+//        while(!q.isEmpty() || i >= arr.length) {
+//            int size = q.size();
+//            while(size-- > 0) {
+//                Node temp = q.poll();
+//                if(i < arr.length) temp.left = new Node(arr[i++]);
+//                if(i < arr.length) temp.right = new Node(arr[i++]);
+//                if(temp.left != null) q.add(temp.left);
+//                if(temp.right != null) q.add(temp.right);
+//            }
+//        }
+//
+//        return root;
+//    }
+//
+//    public static int countLeefs(Node root) {
+//        if(root == null) return 0;
+//
+//        if(root.left == null && root.right == null) return 1;
+//        System.out.println(root.data);
+//        return countLeefs(root.left) + countLeefs(root.right);
+//    }
+//    public static void main(String[] args) {
+//        fileInput();
+//        String str = scan.nextLine();
+//        Node root = insertData(str);
+//        int count = countLeefs(root);
+//        System.out.println(count);
+//    }
+//}
 
 
 //-------------------------------------------------------FileInput---------------------------------------------------------------------------

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang = "en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Footer template</title>
+</head>
+<body>
+<footer id="footerTemplate" th:fragment="footer1(str1, str2)">
+    <div class="container">
+        <h1>This is about footer</h1>
+        <h1 th:text="${str1}"></h1>
+        <h1 th:text="${str2}"></h1>
+    </div>
+</footer>
+</body>
+
+</html>

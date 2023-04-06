@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset = "UTF-8">
+    <title>Footer template</title>
+</head>
+
+<body>
+<h1>This is about <span th:text="${name}"></span></h1>
+<footer id="HostTag" th:replace="footerTemplate::footer1('Title', 'Subtitle')"> <!-- insert, include, replace -->
+</footer>
+</body>
+</html>

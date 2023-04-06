@@ -14,7 +14,9 @@ public class CrudService {
 
     public List<Url> getUrls() {
 //        urlRepository.deleteAll();
+//        return null;
         List<Url> urls =  urlRepository.findAll();
+        System.out.println(urls.toString());
         return urls;
     }
 

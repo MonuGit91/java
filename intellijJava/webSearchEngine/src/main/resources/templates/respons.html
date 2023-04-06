@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+<!--    <title th:text="hii"></title>-->
+    <title>hii</title>
+</head>
+<body>
+<h1 th:text="${name}"> Hii This is me. </h1>
+<!--<h1 th:text="${urls}"/>-->
+<ul th:each="url : ${urls}">
+    <a th:href="${url}" th:text="${url}"></a>
+</ul>
+</body>
+</html>

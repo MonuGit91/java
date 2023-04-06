@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thymeleaf Example</title>
+</head>
+<body>
+<h1>Hello World!</h1>
+<h2>I am learning thymeleaf</h2>
+
+<h2 th:text="${name}"></h2>
+<h2 th:text="${currentDate}"></h2>
+<h3>My name is <span th:text="${ #strings.toUpperCase(name) }"></span></h3>
+<h3>Length of name is <span th:text="${ #strings.length(name) }"></span></h3>
+<div th:with="a=4, b=${b}, n=${name}">
+    <h2>value of a is <span th:text="${a}"></span></h2>
+    <h2>value of b is <span th:text="${b}"></span></h2>
+    <h3>value of n is <span th:text="${n}"></span></h3>
+
+    <h3 th:text="'sum of ' + ${a} + ' and ' + ${b} + ' is ' +${a+b}"></h3>
+    <h3> Sum of <span th:text="${a}"/> and <span th:text="${b}"/> is <span th:text="${a+b}"/></h3>
+</div>
+
+</body>
+</html>

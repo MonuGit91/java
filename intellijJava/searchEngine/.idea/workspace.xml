@@ -2,24 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36d28162-cfd5-47ab-b4c1-06529f18db7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/ApplicationRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/controllers/RequestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/CrawlerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/First_link.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/IndexerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/ObjectCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/Pair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/Ranker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/fileInput/FileInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/fileInput/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/fileInput/readWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eclipsJava/searchEngine/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../eclipsJava/searchEngine/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleafeExplore/src/main/java/com/thymeleaf/thymeleafeExplore/Controller/ThymleafController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleafeExplore/src/main/resources/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleafeExplore/src/main/resources/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleafeExplore/src/main/resources/templates/aboutnew.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleafeExplore/src/main/resources/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleafeExplore/src/main/resources/templates/condition.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleafeExplore/src/main/resources/templates/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleafeExplore/src/main/resources/templates/dynamic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleafeExplore/src/main/resources/templates/footerTemplate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleafeExplore/src/main/resources/templates/loop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleafeExplore/src/main/resources/templates/service.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/controllers/testController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/resources/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/resources/templates/respons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crudOperations/src/main/java/com/basicCrudOperation/services/CrudService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../crudOperations/src/main/java/com/basicCrudOperation/services/CrudService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crudOperations/src/main/java/com/basicCrudOperation/services/FillDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../crudOperations/src/main/java/com/basicCrudOperation/services/FillDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crudOperations/src/main/java/com/basicCrudOperation/services/fileInput/FileInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../crudOperations/src/main/java/com/basicCrudOperation/services/fileInput/FileInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crudOperations/src/main/java/com/basicCrudOperation/services/fileInput/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../crudOperations/src/main/java/com/basicCrudOperation/services/fileInput/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java IntelliJ/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java IntelliJ/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java IntelliJ/fileInput/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../java IntelliJ/fileInput/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/fileInput/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/fileInput/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/testing/FileInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/testing/FileInput.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/testing/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/testing/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/testing/TrieNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/testing/TrieNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/testing/TrieNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/testing/p2/P2class.class" beforeDir="false" afterPath="$PROJECT_DIR$/../java IntelliJ/out/production/Java IntelliJ/testing/p2/P2class.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java IntelliJ/testing/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java IntelliJ/testing/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/src/main/java/com/applicationRunner/ApplicationRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/src/main/java/com/applicationRunner/ApplicationRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/src/main/java/com/crawler/crawler/CrawlerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/src/main/java/com/crawler/crawler/CrawlerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java IntelliJ/testing/p2/P2class.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java IntelliJ/testing/p2/P2class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/src/main/java/com/fileInput/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/src/main/java/com/fileInput/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webSearchEngine/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../webSearchEngine/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/controllers/RequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/controllers/RequestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/IndexerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/IndexerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/ObjectCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/ObjectCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/Ranker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/Ranker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/fileInput/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../webSearchEngine/src/main/java/com/webSearchEngine/services/fileInput/input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

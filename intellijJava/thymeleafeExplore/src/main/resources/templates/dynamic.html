@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>dynamic content</title>
+</head>
+
+<body>
+<h1>This is about dynamic content</h1>
+<h1>
+    <spam th:text="${title}"></spam>
+</h1>
+<h1>
+    <spam th:text="${subtitle}"></spam>
+</h1>
+<footer th:replace="footerTemplate::footer1(${title}, ${subtitle})">
+
+</footer>
+</body>
+</html>
