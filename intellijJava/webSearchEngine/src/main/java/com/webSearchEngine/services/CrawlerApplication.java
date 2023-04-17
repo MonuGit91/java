@@ -62,12 +62,12 @@ public class CrawlerApplication {
             boolean isIndexed = indexerApplication.indexer(qurl, document);
             if(isIndexed) { return; }
 
-//            for(Element link : document.select("a[href]")) {
-//                String nextLink = link.absUrl("href");
-//                if(visited.contains(nextLink)) { continue; }
-//                q.add(nextLink);
-//                visited.add(nextLink);
-//            }
+            for(Element link : document.select("a[href]")) {
+                String nextLink = link.absUrl("href");
+                if(visited.contains(nextLink)) { continue; }
+                q.add(nextLink);
+                visited.add(nextLink);
+            }
         }
     }
 

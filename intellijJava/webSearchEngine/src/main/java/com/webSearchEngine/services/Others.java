@@ -48,7 +48,7 @@ public class Others {
     public static void fillWiki(String url, Document document, String text, String domain, String title) {
         if(wikiList.size() >= 2) return;
 
-        if(text.length() > 200) text = text.substring(0, 190)+"...";
+//        if(text.length() > 300) text = text.substring(0, 290)+"...";
         wikiList.add(new Wiki(url, document, text, domain, title));
     }
 
