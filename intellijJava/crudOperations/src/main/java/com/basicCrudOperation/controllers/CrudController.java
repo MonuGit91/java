@@ -2,7 +2,7 @@ package com.basicCrudOperation.controllers;
 
 import com.basicCrudOperation.dao.models.Url;
 import com.basicCrudOperation.services.CrudService;
-import com.basicCrudOperation.services.FillDataBase;
+//import com.basicCrudOperation.services.FillDataBase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,12 +15,17 @@ import java.util.List;
 public class CrudController {
     @Autowired
     CrudService crudServices;
-    @Autowired
-    FillDataBase fillDataBase;
 
     @GetMapping("/geturls")
     List<Url> getUrls() {
-        fillDataBase.fill();
         return crudServices.getUrls();
+    }
+    @GetMapping("/deleteurls")
+    List<Url> deleteUrls() {
+        return crudServices.deleteUrls();
+    }
+    @GetMapping("/seturls")
+    List<Url> setUrls() {
+        return crudServices.setUrls();
     }
 }
