@@ -7,21 +7,31 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Ranker {
-    public static List<URL> urls = new ArrayList<>();
+    public static List<URL> urls= new ArrayList<>();
+    public static List<Pair> finalList;
     public static void ranking(List<Pair> list, String keys[]) {
+        if(list == null) {
+            list = new ArrayList<>();
+            return;
+        }
         Collections.sort(list, new Descending(keys[0]));
 
-        for(Pair pair : list) {
-            if(urls.size() < 50 && !urls.contains(pair.url)) {
-                try {
-                    urls.add(new URL(pair.url));
-                }
-                catch (Exception e) {}
-
-            }
-            else break;
-            System.out.println(pair.url);
-        }
+//        for(int i = list.size()-1; i > 40; i--) {
+//            list.remove(i);
+//        }
+        System.out.println(list.size());
+        finalList = list;
+//        for(Pair pair : list) {
+//            if(urls.size() < 50 && !urls.contains(pair.url)) {
+//                try {
+//                    urls.add(new URL(pair.url));
+//                }
+//                catch (Exception e) {}
+//
+//            }
+//            else break;
+//            System.out.println(pair.url);
+//        }
     }
 }
 

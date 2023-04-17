@@ -16,16 +16,20 @@ public class ObjectCreator extends FileInput {
 
     public void createrObject(String quarry) {
         fileInput();
-        List<Url> urls =  urlRepository.findAll();
+        List<Url> urls = urlRepository.findAll();
+        if (urls.size() <= 0) System.out.println("Data base is empty");
 
-        IndexerApplication.words = quarry.trim().split("[',','.','-','_',' ']");
-        for (int i = 0; i < IndexerApplication.words.length; i++) {
-            IndexerApplication.words[i] = IndexerApplication.words[i].toLowerCase();
-        }
+        IndexerApplication.words = quarry.trim().split("[^a-zA-Z]+");
         List<CrawlerApplication> bots = new ArrayList<>();
-        for (int i = 0; i < urls.size() && i < 40; i++) {
+        for (int i = 0; i < urls.size(); i++) {
             bots.add(new CrawlerApplication(urls.get(i).getUrl(), 1, i));
         }
+
+
+//        for(CrawlerApplication cr : bots) {
+//            cr.crawlLinkBfs(cr.first_link);
+//        }
+
         System.out.println(bots.size());
         for (CrawlerApplication bot : bots) {
             try {

@@ -19,6 +19,8 @@ import java.util.List;
 
 import static com.webSearchEngine.services.IndexerApplication.indexed;
 import static com.webSearchEngine.services.IndexerApplication.words;
+import static com.webSearchEngine.services.Others.*;
+import static com.webSearchEngine.services.StaticVariables.*;
 
 //@RestController
 @RequestMapping("/www.ayudika.com")
@@ -26,28 +28,20 @@ import static com.webSearchEngine.services.IndexerApplication.words;
 public class RequestController {
     @Autowired
     ObjectCreator objectCreator;
+
     @GetMapping("/{value}")
-    /*ResponseEntity<List<URL>>*/ public String  getUrls(@PathVariable("value") String quarry, Model model) {
+    public String  getUrls(@PathVariable("value") String quarry, Model model) {
         objectCreator.createrObject(quarry);
         System.out.println("RequestController");
-        Ranker.ranking(indexed, words);
+        Ranker.ranking(indexed, quarry.split("[' ']"));
 
-        ResponseEntity<List<URL>> responseEntity = new ResponseEntity<>(Ranker.urls, HttpStatus.OK);
+        ResponseEntity<List<Pair>> responseEntity = new ResponseEntity<>(Ranker.finalList, HttpStatus.OK);
         Clear.cleanMemory();
-//        return responseEntity;
-        List<URL> l = responseEntity.getBody();
-//        System.out.println(l.toString());
-//        System.out.println("string: "+responseEntity.toString());
-//        System.out.println("This is testing method");
-        model.addAttribute("name", "Jems");
-        model.addAttribute("urls", l);
-        return "respons";
+        List<Pair> l = responseEntity.getBody();
+
+        fillWebPage(model, quarry, l);
+        System.out.println(l.size() + " Links sent");
+        return "webpage";
     }
 
-    @GetMapping("/test")
-    public String test(Model model) {
-        System.out.println("This is testing method");
-        model.addAttribute("name", "Jems");
-        return "respons";
-    }
 }

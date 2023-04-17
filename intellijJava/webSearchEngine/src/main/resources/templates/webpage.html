@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Search Engine Result</title>
+    <style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #f1f1f1;
+		}
+		.container {
+			display: flex;
+			height: 100vh;
+			width: 100%;
+		}
+		.results-box, .wiki-box {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			padding: 20px;
+			margin: 10px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+			overflow-y: scroll;
+		}
+		.results-box {
+			flex: 0.7;
+			margin-right: 10px;
+		}
+		.wiki-box {
+			flex: 0.3;
+			margin-left: 10px;
+		}
+		h2, h3 {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		.result {
+			border: 1px solid #ccc;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+		.row1{
+    max-width: 1500px;
+    padding: 5px;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.img {
+    margin: 0px 100px 10px 0px;
+    border-radius: 20%;
+}
+
+.colHeadLeft{
+    max-width: 40px;
+    padding: 10px;
+
+    /* background-color: white; */
+}
+.colHeadRight{
+    border-radius: 20%;
+    margin: 0 0 0 -850px;
+    max-width: 300px;
+    max-height: 70px;
+    padding: 10px;
+    background-color: white;
+}
+.small-link {
+  font-size: 12px;
+}
+.no-underline {
+  text-decoration: none;
+}
+.big-link {
+  font-size: 20px; /* change the value to the desired font size */
+  padding: 10px 20px; /* change the values to the desired padding */
+}
+  .no-underline-wiki {
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+	</style>
+</head>
+<body>
+<div class="row1">
+    <div class="colHeadLeft">
+        <img class="img" src="pic.png" alt="logo" width="70" height="70">
+    </div>
+    <div class="colHeadRight">
+        <p> <h2> Ayudika the web search engine </h2></p>
+    </div>
+</div>
+<div class="container">
+    <div class="results-box">
+        <h2>Search Results for: <spam th:text="${quarry}"></spam></h2>
+        <div class="result" th:each="pair : ${finalList}">
+            <a style="margin-bottom: 0px;" th:href="${pair.url}" class="no-underline" th:text="${pair.title}"></a><br>
+            <a th:href="${pair.url}" class="small-link" th:text="${pair.url}"></a>
+            <p th:text="${pair.demoParagraph}"></p>
+        </div>
+    </div>
+    <div class="wiki-box">
+        <h2>Wikipedia Results</h2>
+        <a style="margin-bottom: 0px;" th:href="${wikiUrl}" class="no-underline-wiki" th:text="${wikiTitle}"></a>
+        <a th:href="${wikiUrl}" class="small-link" th:text="${wikiUrl}"></a>
+        <p><span th:text="${wikiPara}"></span></p>
+        <p><span th:text="${wikiPara1}"></span></p>
+    </div>
+</div>
+</body>
+</html>

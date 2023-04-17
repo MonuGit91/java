@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8"/>
 <!--    <title th:text="hii"></title>-->
-    <title>hii</title>
+    <title th:text="${name}"></title>
 </head>
 <body>
-<h1 th:text="${name}"> Hii This is me. </h1>
+<h1 th:text="'Result for: ' + ${name}"></h1>
 <!--<h1 th:text="${urls}"/>-->
 <ul th:each="url : ${urls}">
     <a th:href="${url}" th:text="${url}"></a>
