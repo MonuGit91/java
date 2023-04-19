@@ -110,25 +110,74 @@
             line-height: 1.5;
             font-family: Garamond;
         }
+
+        .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  padding: 7px;
+  background: linear-gradient(to bottom, #4d79ff,  #232f3e);
+  /* background: linear-gradient(to bottom, #232f3e, #232f3e); */
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo .logo-text {
+  margin-right: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.logo h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.logo .logo-icon {
+  width: 50px;
+}
+
+.logo .logo-icon svg {
+  width: 100%;
+  height: auto;
+  fill: #fff;
+}
+.custom-font-quarry {
+        font-size: 18px;
+        color: red;
+        font-family: Garamond;
+    }
     </style>
 </head>
 
 <body>
-<div class="row1">
-    <div class="colHeadLeft">
-        <img class="img" src="pic.png" alt="logo" width="70" height="70">
+<div class="logo">
+    <div class="logo-text">
+        <h1>Ayudika</h1>
+        <h2>The Web Search Engine</h2>
     </div>
-    <div class="colHeadRight">
-        <p>
-        <h2> Ayudika the web search engine </h2>
-        </p>
+    <div class="logo-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24 ">
+            <path d="M16.25 14.4h-.9l-.3-.3a6.6 6.6 0 0 0 1.2-3.8c0-3.6-2.9-6.5-6.5-6.5S2.5 6.7 2.5 10.3s2.9 6.5 6.5 6.5c1.6 0 3.2-.6 4.4-1.6l.3.3v.9l6 6 1.4-1.4-6-6zm-9.75 0a4.9 4.9 0 0 1 4.9-4.9 4.9 4.9 0 0 1 4.9 4.9 4.9 4.9 0 0 1-4.9 4.9 4.9 4.9 0 0 1-4.9-4.9z"/>
+        </svg>
     </div>
 </div>
+
 <div class="container">
     <div class="results-box">
-        <h2>Search Results for:
-            <spam th:text="${quarry}"></spam>
-        </h2>
+        <h2>Search Results for: <spam th:text="${quarry}" class="custom-font-quarry"></spam></h2>
+
         <div class="result" th:each="pair : ${finalList}">
             <a style="margin-bottom: 0px;" th:href="${pair.url}" class="no-underline"
                th:text="${pair.title}"></a><br>
@@ -144,6 +193,16 @@
         <p><span th:text="${wikiPara1}" class="my-text-container"></span></p>
     </div>
 </div>
+
+<script>
+        const logoIcon = document.querySelector('.logo-icon svg');
+logoIcon.addEventListener('mouseover', () => {
+  logoIcon.style.transform = 'rotate(90deg)';
+});
+logoIcon.addEventListener('mouseout', () => {
+  logoIcon.style.transform = 'rotate(0deg)';
+});
+      </script>
 </body>
 
 </html>

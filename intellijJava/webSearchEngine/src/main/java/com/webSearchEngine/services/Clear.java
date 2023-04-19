@@ -12,5 +12,7 @@ public class Clear {
         visited = new ArrayList<>();
         q = new LinkedList<>();
         domains = new ArrayList<>();
+        finalList = new ArrayList<>();
+        wikiList = new ArrayList<>();
     }
 }

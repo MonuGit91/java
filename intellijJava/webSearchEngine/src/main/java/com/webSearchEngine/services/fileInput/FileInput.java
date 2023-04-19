@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class FileInput {
-    private static File input = new File("/Users/narenderkumarchoudhary/Public/education/java/intellijJava/searchEngine/crawler/src/main/java/com/fileInput/input.txt");
+    private static File input = new File("/Users/narenderkumarchoudhary/Public/education/java/intellijJava/webSearchEngine/src/main/java/com/webSearchEngine/services/fileInput/input.txt");
     public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     public static Scanner scan = new Scanner(System.in);
 
