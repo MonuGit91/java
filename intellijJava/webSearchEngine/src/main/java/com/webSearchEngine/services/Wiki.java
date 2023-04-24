@@ -1,7 +1,6 @@
 package com.webSearchEngine.services;
 
 import org.jsoup.nodes.Document;
-
 import static com.webSearchEngine.services.StaticVariables.wikiList;
 
 public class Wiki {

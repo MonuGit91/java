@@ -1,5 +1,7 @@
 package com.webSearchEngine.services;
 
+import org.jsoup.Connection;
+import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
@@ -36,7 +38,8 @@ public class IndexerApplication {
             if (text.length() > 160) demoPara = text.substring(0, 150) + "...";
 //            else if(text.length() > 100) demoPara = text.substring(0, 100) + "...";
             for (String word : words) {
-                if (map.containsKey(word.toLowerCase()) && !domains.contains(domain)) {
+                if (map.containsKey(word.toLowerCase())) {
+                    System.out.println(word);
                     indexed.add(new Pair(url, map, demoPara, title, domain));
                     domains.add(domain);
                     return true;
@@ -55,7 +58,7 @@ public class IndexerApplication {
 
             for (String quarryWord : words) {
                 for(String textWord : textArr) {
-                    if (textWord.equals(quarryWord)) {
+                    if (textWord.contains(quarryWord)) {
                         matchedWords++;
                         if(matchedWords >= 5) {
                             addToMap(url, document, map, domain, title, indexed, words, demoPara);
@@ -93,5 +96,19 @@ public class IndexerApplication {
         }
         indexed.add(new Pair(url, map, demoPara, title, domain));
         domains.add(domain);
+    }
+    public static Document request(String url) {
+        try {
+            Connection connection = Jsoup.connect(url);
+            Document document = connection.get();
+
+            if (connection.response().statusCode() == 200) {
+                return document;
+            }
+
+        } catch (Exception E) {
+        }
+
+        return null;
     }
 }

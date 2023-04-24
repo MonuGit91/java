@@ -2,13 +2,17 @@ package com.webSearchEngine.services;
 
 import com.webSearchEngine.dao.models.Url;
 import com.webSearchEngine.dao.repositories.UrlRepository;
+import org.jboss.jandex.Indexer;
+import org.jsoup.nodes.Document;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import static com.webSearchEngine.services.Others.*;
 import static com.webSearchEngine.services.StaticVariables.*;
 
 @Service
@@ -28,8 +32,9 @@ public class ObjectCreator{
     public void multiThreading(List<Url> urls) {
         List<CrawlerApplication> bots = new ArrayList<>();
         for (int i = 0; i < urls.size(); i++) {
-            for(int j = 0; j < 1; j++)
-            bots.add(new CrawlerApplication(urls.get(i).getUrl(), 1, i));
+            for(int j = 0; j < 1; j++) {
+                    bots.add(new CrawlerApplication(urls.get(i).getUrl(), 1, i));
+                }
         }
         for (CrawlerApplication bot : bots) {
             try {

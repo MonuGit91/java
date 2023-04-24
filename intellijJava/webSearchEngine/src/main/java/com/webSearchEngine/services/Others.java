@@ -1,6 +1,8 @@
 package com.webSearchEngine.services;
 
 import com.webSearchEngine.services.fileInput.FileInput;
+import org.jsoup.Connection;
+import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.springframework.ui.Model;
@@ -9,7 +11,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import static com.webSearchEngine.services.CrawlerApplication.request;
+//import static com.webSearchEngine.services.CrawlerApplication.request;
 import static com.webSearchEngine.services.StaticVariables.*;
 
 public class Others extends FileInput {
@@ -31,7 +33,7 @@ public class Others extends FileInput {
             }
             return domainName;
         } catch (Exception e) {
-            System.out.println("Exception in domainExtract in CrawlerApplication");
+//            System.out.println("Exception in domainExtract in CrawlerApplication");
         }
         return null;
     }
@@ -61,7 +63,7 @@ public class Others extends FileInput {
             for(Pair pair : list) {
                 if(pair.map != null) {
                     if(pair.demoParagraph.length() < 100) {
-                        Document document = request(pair.url);
+                        Document document = IndexerApplication.request(pair.url);
                         for(Element paraElement : document.select("p")) {
                             String text = paraElement.text();
                             if(text.length() > 100) {
@@ -96,4 +98,5 @@ public class Others extends FileInput {
         }
         return quarry.trim();
     }
+
 }

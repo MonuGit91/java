@@ -1,13 +1,8 @@
 package com.webSearchEngine.services;
 
-import org.jsoup.Connection;
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import java.lang.String;
-import java.util.HashSet;
-import java.util.Set;
-
 import static com.webSearchEngine.services.StaticVariables.*;
 
 public class CrawlerApplication implements Runnable{
@@ -16,9 +11,11 @@ public class CrawlerApplication implements Runnable{
     public String first_link;
     int ID;
     int threadno;
+    private String domain;
     static IndexerApplication indexerApplication = new IndexerApplication();
 
     public CrawlerApplication(String first_link, int num, int no) {
+        this.domain = Others.domainExtract(first_link);
         this.first_link = first_link;
         thread = new Thread(this::run);
         thread.start();
@@ -27,7 +24,6 @@ public class CrawlerApplication implements Runnable{
     }
 
     public void run() {
-
         try {
             crawlLinkBfs(first_link);
         } catch (Exception e) {
@@ -41,20 +37,19 @@ public class CrawlerApplication implements Runnable{
         while(!q.isEmpty() && indexerApplication.indexed.size() < 40 && level < MAX_DEPTH) {
             level++;
             String qurl = q.poll();
-//            if(qurl == null) continue;
-            Document document = request(qurl);
-            if (document == null || qurl == null) {
-                System.out.println(level+" Empty doc "+qurl);
+            Document document = IndexerApplication.request(qurl);
+            if (document == null || qurl == null || !Others.domainExtract(qurl).equals(domain)) {
                 return; }
+//            System.out.println(qurl);
             boolean isIndexed = indexerApplication.indexer(qurl, document);
             if(isIndexed) { return; }
 
-//            for(Element link : document.select("a[href]")) {
-//                String nextLink = link.absUrl("href");
-//                if(visited.contains(nextLink)) { continue; }
-//                q.add(nextLink);
-//                visited.add(nextLink);
-//            }
+            for(Element link : document.select("a[href]")) {
+                String nextLink = link.absUrl("href");
+                if(visited.contains(nextLink)) { continue; }
+                q.add(nextLink);
+                visited.add(nextLink);
+            }
         }
     }
 
@@ -62,18 +57,4 @@ public class CrawlerApplication implements Runnable{
         return thread;
     }
 
-    public static Document request(String url) {
-        try {
-            Connection connection = Jsoup.connect(url);
-            Document document = connection.get();
-
-            if (connection.response().statusCode() == 200) {
-                return document;
-            }
-
-        } catch (Exception E) {
-        }
-
-        return null;
-    }
 }

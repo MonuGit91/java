@@ -8,6 +8,7 @@ import static com.webSearchEngine.services.StaticVariables.*;
 public class Ranker {
     public static List<URL> urls= new ArrayList<>();
     public static void ranking(List<Pair> list, String keys[]) {
+        System.out.println("Now Ranking web pages please wait!!");
         Set<String> urlSet = new HashSet<>();
         if(list == null) {
             list = new ArrayList<>();
@@ -26,6 +27,7 @@ public class Ranker {
         }
         if(finalList == null) finalList = list;
     }
+
 }
 
 
@@ -37,6 +39,12 @@ class Descending implements Comparator<Pair> {
     }
     @Override
     public int compare(Pair o1, Pair o2) {
+        for(String word : key) {
+            word = word.toLowerCase();
+            if(o1.title.contains(word)) return 1;
+            if(o2.title.contains(word)) return -1;
+        }
+
         int matchedKeys1 = 0;
         int matchedKeys2 = 0;
         for(String word : key) {
@@ -45,7 +53,7 @@ class Descending implements Comparator<Pair> {
             if(o2.map.containsKey(word)) matchedKeys2++;
         }
         if(matchedKeys1 != matchedKeys2) {
-            return matchedKeys1-matchedKeys2;
+            return (matchedKeys1-matchedKeys2);
         }
 
         matchedKeys1 = 0;
@@ -59,7 +67,7 @@ class Descending implements Comparator<Pair> {
                 matchedKeys2 += o2.map.get(word);
             }
         }
-        return matchedKeys1-matchedKeys2;
+        return (matchedKeys1-matchedKeys2);
     }
 
 }
