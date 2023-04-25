@@ -15,11 +15,9 @@ public class Pair {
     public Pair() {
     }
 
-    public Pair(String url, Map<String, Integer> map, String demoPara, String title, String domain) {
+    public Pair(String url, String demoPara, String title) {
         this.url = url;
-        this.map = map;
         this.demoParagraph = demoPara;
-        this.domain = domain;
         this.title = title;
     }
     public Pair(String url, String title, HashSet<String> words) {

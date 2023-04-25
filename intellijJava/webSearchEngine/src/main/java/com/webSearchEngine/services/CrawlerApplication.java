@@ -15,8 +15,8 @@ public class CrawlerApplication implements Runnable{
     static IndexerApplication indexerApplication = new IndexerApplication();
 
     public CrawlerApplication(String first_link, int num, int no) {
-        this.domain = Others.domainExtract(first_link);
         this.first_link = first_link;
+        domain = Others.domainExtract(first_link);
         thread = new Thread(this::run);
         thread.start();
         ID = num;

@@ -40,7 +40,7 @@ public class Others extends FileInput {
 
     public static void fillWebPage(Model model, String quarry, List<Pair> list) {
         if(list.size() == 0) {
-            list.add(new Pair("", null, "", "", ""));
+            list.add(new Pair("", "", ""));
         }
         checkResultList(list);
         try {
@@ -52,7 +52,7 @@ public class Others extends FileInput {
             model.addAttribute("wikiTitle", wikiList.get(0).title);
         } catch (Exception e) {
             if(wikiList.size() == 0) {
-                wikiList.add(new Wiki("", null, "Wikipedia result not found!!", "", ""));
+                wikiList.add(new Wiki("", null, "Wikipedia result not found!!", ""));
                 model.addAttribute("wikiPara", wikiList.get(0).demoParagraph);
             }
         }

@@ -2,17 +2,13 @@ package com.webSearchEngine.services;
 
 import com.webSearchEngine.dao.models.Url;
 import com.webSearchEngine.dao.repositories.UrlRepository;
-import org.jboss.jandex.Indexer;
-import org.jsoup.nodes.Document;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import static com.webSearchEngine.services.Others.*;
 import static com.webSearchEngine.services.StaticVariables.*;
 
 @Service
